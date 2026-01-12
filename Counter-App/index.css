@@ -1,0 +1,45 @@
+.counter-controls{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.counter-value{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.value{
+    padding-top: 50px;
+    color: black;
+    height: 40px;
+    width: 40px;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    
+}
+.btn{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(77, 129, 227);
+    margin: 8px;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size:larger;
+    cursor: pointer;
+    border: 1px,solid,rgb(77, 129, 227);
+    border-radius: 4px;
+}
+.app-name{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: black;
+
+}
