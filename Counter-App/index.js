@@ -10,6 +10,7 @@ increment.addEventListener('click' , function(){
     counterValue.textContent = count;
     console.log(count)
 })
+//decrement
 decrement.addEventListener('click' , function(){
     count--;
     counterValue.textContent = count;
