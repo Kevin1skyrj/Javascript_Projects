@@ -12,13 +12,13 @@ let tipPercentage = 0;
 generateBill.addEventListener('click',() =>{
     const billAmount = parseInt(billAmountInput.value);
     const numberOfPeople = parseInt(numberOfPeopleInput.value);
-    const tipAmount = billAmount * (tipAmount/100);
+    const tipAmount = billAmount * (tipPercentage/100);
     const totalAmount = billAmount + tipAmount;
     const eachPersonBill = totalAmount / numberOfPeople;
 
-    tipAmountOutput.innerTextContent =  `₹${tipAmount}`;
-    toalAmountOutput.innerTextContent =  `₹${totalAmount}`;
-    eachPersonBillOutput.innerTextContent =  `₹${eachPersonBill}`;
+    tipAmountOutput.innerText =  `₹${tipAmount}`;
+    toalAmountOutput.innerText =  `₹${totalAmount}`;
+    eachPersonBillOutput.innerText =  `₹${eachPersonBill}`;
     console.log('GenerateBill clicked')
 })
 billAmountInput.addEventListener('input', () =>{
@@ -29,8 +29,23 @@ billAmountInput.addEventListener('input', () =>{
   }
 })
 
-tipContainer.addEventListener('click', () => {
-   console.log("clicked")
+tipContainer.addEventListener('click', (e) => {
+  if (tipContainer.classList.contains('disabled')) return
+
+  if (e.target !== tipContainer) {
+    ;[...tipContainer.children].forEach((tip) =>
+      tip.classList.remove('selected')
+    )
+    e.target.classList.add('selected')
+    tipPercentage = parseInt(e.target.innerText)
+    customTipInput.value = ''
+
+    if (numberOfPeopleInput.value && tipPercentage) {
+      generateBill.disabled = false
+    } else {
+      generateBill.disabled = true
+    }
+  }
 })
 
 customTipInput.addEventListener('input',() =>{
@@ -38,6 +53,10 @@ customTipInput.addEventListener('input',() =>{
 })
 
 numberOfPeopleInput.addEventListener('input',() =>{
-    console.log('People typing')
+    if(numberOfPeopleInput && tipPercentage){
+        generateBill.disabled = false;
+    }else{
+        generateBill.disabled = true;
+    }
 })
 
