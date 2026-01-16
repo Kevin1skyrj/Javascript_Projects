@@ -5,10 +5,22 @@ const numberOfPeopleInput = document.querySelector('.number-of-people');
 const generateBill = document.querySelector('.generate-bill-btn');
 const tipAmountOutput = document.querySelector('.tip-amount span');
 const toalAmountOutput = document.querySelector('.total span');
-const eachPersonBill = document.querySelector('.each-person-bill span');
+const eachPersonBillOutput = document.querySelector('.each-person-bill span');
 const reset = document.querySelector('.reset-btn');
 
+let tipPercentage = 0;
+generateBill.addEventListener('click',() =>{
+    const billAmount = parseInt(billAmountInput.value);
+    const numberOfPeople = parseInt(numberOfPeopleInput.value);
+    const tipAmount = billAmount * (tipAmount/100);
+    const totalAmount = billAmount + tipAmount;
+    const eachPersonBill = totalAmount / numberOfPeople;
 
+    tipAmountOutput.innerTextContent =  `₹${tipAmount}`;
+    toalAmountOutput.innerTextContent =  `₹${totalAmount}`;
+    eachPersonBillOutput.innerTextContent =  `₹${eachPersonBill}`;
+    console.log('GenerateBill clicked')
+})
 billAmountInput.addEventListener('input', () =>{
   if(billAmountInput.value){
     customTipInput.disabled = false;
@@ -29,7 +41,3 @@ numberOfPeopleInput.addEventListener('input',() =>{
     console.log('People typing')
 })
 
-generateBill.addEventListener('click',() =>{
-    
-    console.log('GenerateBill clicked')
-})
