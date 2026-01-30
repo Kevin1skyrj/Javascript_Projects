@@ -1,0 +1,35 @@
+
+.outer{
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   height: 200px;
+   width: 200px;
+   margin:auto;
+   padding: 10px; 
+   border: 1px solid black;
+   position: relative;
+   box-shadow: 10px 10px 3px red ;
+}
+h2{
+    text-align: center;
+}
+
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: greenyellow;
+    border: 0.8px dotted black;
+    /* transform: scale(1.2);
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+    */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
