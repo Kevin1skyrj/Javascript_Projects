@@ -1,0 +1,51 @@
+
+/* 
+   Every HTML Element is static by default 
+   top,left,right,bottom properties do not work for static position 
+   
+*/
+
+.box{
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    max-height: 400px;
+    background-color: yellow;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.box1{
+    background-color: yellow;
+    position: static;
+    top: 10px; 
+}
+.box2{
+    background-color: rgb(80, 80, 211);
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.box3{
+    background-color: rgb(52, 216, 107);
+    position:absolute;
+    /* inset: 0px; */
+}
+.box4{
+    background-color: rgb(241, 87, 146);
+}
+.box5{
+    background-color: rgb(225, 112, 25);
+}
+.header{
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+}
+.nav{
+    background-color: cornflowerblue;
+    position: fixed;
+    /* top: 0; */
+}
