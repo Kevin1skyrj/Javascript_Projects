@@ -9,7 +9,7 @@
    padding: 10px; 
    border: 1px solid black;
    position: relative;
-   box-shadow: 10px 10px 3px red ;
+   box-shadow: 10px 10px 0px red ;
 }
 h2{
     text-align: center;
