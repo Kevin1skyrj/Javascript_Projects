@@ -13,10 +13,21 @@ body{
     background-position-x: 100%;
     background-position-y: -160px;
 }
-h1{
+.hashtag-header h1{
     margin: 0;
     margin-bottom: 1rem;
+    font-size: 3rem;
 }
-span{
-    font-size: 24px;
+.hashtag-header span{
+    font-size: 2rem;
+}
+.hashtag-header img {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid white;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+img + img{
+    margin: -1rem;
 }
