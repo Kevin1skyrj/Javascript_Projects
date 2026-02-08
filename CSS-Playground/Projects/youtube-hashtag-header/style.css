@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hashtag-header{
+    padding: 4rem;
+    background-color: #065fd4;
+    color: white;
+    background-image: url(./images/background.png);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: -160px;
+}
+h1{
+    margin: 0;
+    margin-bottom: 1rem;
+}
+span{
+    font-size: 24px;
+}
