@@ -54,3 +54,10 @@ input[type=tel] {
 .hint{
     margin-top: 8px;
 }
+.input-suffix {
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+    opacity: .7;
+}
+
