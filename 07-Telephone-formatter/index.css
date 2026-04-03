@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* text-align: center; */
+  font-family: cursive, sans-serif;
+}
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  width: 100%;
+  max-width: 28rem;
+  padding: 2rem;
+  margin: auto;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow:
+    0 4px 6px -1px #0000001a,
+    0 2px 4px -2px #0000001a;
+  margin-top: 16px;
+}
+.form-group {
+  width: 100%;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-align: left;
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+input[type=tel] {
+    width: 100%;
+    padding: .75rem 2.5rem .75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+    background-color: #fff;
+    border: 1px solid bisque;
+    border-radius: 4px;
+}
+.hint{
+    margin-top: 8px;
+}
