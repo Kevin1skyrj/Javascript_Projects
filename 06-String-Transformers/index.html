@@ -8,15 +8,43 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <input
-      type="text"
-      class="input-field"
-      placeholder="Type Something to transform..."
-    />
-    <p class="hint-text">Type any text to see it transformed in different formats below</p>
-    <div>
-        <span></span>
-        <input type="text">
-    </div>
+    <main>
+      <input
+        type="text"
+        class="input-field"
+        placeholder="Type Something to transform..."
+      />
+      <p class="hint-text">
+        Type any text to see it transformed in different formats below
+      </p>
+      <div class="transform-item" id="lower-case">
+        <span>LOWER CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="upper-case">
+        <span>UPPER CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="camel-case">
+        <span>CAMEL CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="pascal-case">
+        <span>PASCAL CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="snake-case">
+        <span>SNAKE CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="kebab-case">
+        <span>KEBAB CASE</span>
+        <output class="transform-output"></output>
+      </div>
+      <div class="transform-item" id="trim">
+        <span>TRIM SPACES</span>
+        <output class="transform-output"></output>
+      </div>
+    </main>
   </body>
 </html>
