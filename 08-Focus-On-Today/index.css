@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive,sans-serif;
+    background-color: #f2f9ed;
+}
+h1{
+    text-align: center;
+    font-weight:bold;
+    font-size: 54px;
+}
+.green{
+    color: #48A300;
+}
+.brown{
+    color: #61481C;
+}
