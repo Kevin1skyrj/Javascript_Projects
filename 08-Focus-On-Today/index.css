@@ -6,6 +6,7 @@ body{
     background-color: #f2f9ed;
 }
 .title{
+    padding-top: 2px;
     text-align: center;
     font-weight:bold;
     font-size: 54px;
@@ -24,19 +25,73 @@ body{
     margin: auto;
     border-radius: 15px;
 }
-.container > h1{
-    margin-top: 29px;
-    margin-left: 42px;
+h1{
+    padding-top: 29px;
+    padding-left: 42px;
     font-size: 32px;
 }
 .para{
     margin-left: 42px;
 }
 .progress-bar {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 574px;
   height: 30px;
   background: #e6efe6;
   border-radius: 20px;
   overflow: hidden;
   border: 2px solid #cde3cd;
+}
+.warning {
+  color: red;
+  font-size: 12px;
+  margin-left: 42px;
+}
+.goal {
+  display: flex;
+  height: 82px;
+  width: 570px;
+  align-items: center;
+  gap: 10px;
+  background: #f6f8f6;
+  padding: 14px;
+  border-radius: 17px;
+  margin-bottom: 12px;
+  margin-left: 42px;
+  background-color: #FFFFFF;
+  border: 1px solid #D9D9D9;
+}
+.goal input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.goal input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+}
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 54px;
+  font-size: 14px;
+  font-style: italic;
+  color: #333;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  font-size: 12px;
+  color: #999;
+  padding-bottom: 30px;
 }
