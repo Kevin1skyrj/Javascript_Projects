@@ -145,7 +145,7 @@ button {
 
 .toasts-container.right {
     left: auto;
-    right: 0rem;
+    right: 1rem;
 }
 
 .toasts-container.bottom {
