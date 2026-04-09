@@ -11,7 +11,18 @@ showToastBtn.addEventListener("click", () => {
   newToast.classList.add('toast');
   newToast.classList.add(toastType.value);
 
-  newToast.innerText = `${toastMessage.value} \u2716`
+  newToast.innerText = `${toastMessage.value} `
+
+  const closeIcon = document.createElement('span');
+  closeIcon.innerText = '\u2716'
+  newToast.append(closeIcon);
+
+  closeIcon.addEventListener('click', () => {
+    newToast.classList.add('go-left');
+    setTimeout(() => {
+      newToast.remove()
+    }, 100);
+  })
 
   toastContainer.append(newToast);
 
