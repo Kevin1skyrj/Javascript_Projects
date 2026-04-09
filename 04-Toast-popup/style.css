@@ -113,19 +113,19 @@ button {
 }
 
 .toast.success::before {
-    content: '✓';
+    content: '✓ ';
 }
 
 .toast.error::before {
-    content: '✗';
+    content: '✗ ';
 }
 
 .toast.warning::before {
-    content: '⚠';
+    content: '⚠ ';
 }
 
 .toast.info::before {
-    content: 'ⓘ';
+    content: 'ⓘ ';
 }
 
 .toast span {

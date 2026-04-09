@@ -9,6 +9,11 @@ const toastContainer = document.querySelector(".toasts-container");
 showToastBtn.addEventListener("click", () => {
   const newToast = document.createElement('div');
   newToast.classList.add('toast');
+  newToast.classList.add(toastType.value);
+
+  newToast.innerText = `${toastMessage.value} \u2716`
+
+  toastContainer.append(newToast);
 
   if (horizontalPosition.value === "right") {
     toastContainer.classList.add("right");
