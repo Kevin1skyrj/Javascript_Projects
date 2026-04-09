@@ -24,6 +24,13 @@ showToastBtn.addEventListener("click", () => {
     }, 100);
   })
 
+  setTimeout(() => {
+    newToast.classList.add('go-left');
+        setTimeout(() => {
+      newToast.remove()
+    }, 100);
+  }, 3000);
+
   toastContainer.append(newToast);
 
   if (horizontalPosition.value === "right") {
