@@ -1,0 +1,1 @@
+const wordList = ['Software Engineer', 'DevOps Engineer', 'Full-Stack Developer', 'Problem-Solver'];
